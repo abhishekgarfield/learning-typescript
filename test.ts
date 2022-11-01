@@ -14,6 +14,9 @@ arr2.push('hello');
 
 let arr3 :readonly string[]=["helllo"]; // readonly array cannot be mofdified
 
+let typples: [number,boolean,string]=[1,true,"hello"]; // tupples
+let [x,y,z]=typples; // destructing tupples
+
 
 
 
