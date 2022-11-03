@@ -44,7 +44,7 @@ type car={
     year:carYear 
 }
 
-const Car:car={               //aliases apply to all type of variables
+const Car:car={               // aliases apply to all type of variables
 name:"abhishek",
 year:2020
 }
@@ -55,7 +55,7 @@ interface rect{
 }
 
 const Rectangle:rect={
-    height:10,                 //Interfaces only apply to objects
+    height:10,                 // Interfaces only apply to objects
     width:20
 }
 
