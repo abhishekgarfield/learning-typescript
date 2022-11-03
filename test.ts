@@ -25,6 +25,16 @@ let obj1:{type:number,name?:string}={type:1};
 obj1.name="abhishek"
 
 
+enum temp{
+    north,
+    south,
+    east ,
+    west
+}
+                              // enums
+console.log(temp.north); 
+temp.north="south"; // readonly property
+
 
 
 
