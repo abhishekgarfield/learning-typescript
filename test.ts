@@ -36,5 +36,28 @@ console.log(temp.north);
 temp.north="south"; // readonly property
 
 
+type carYear=number;
+type carName=string
+
+type car={
+    name:carName,
+    year:carYear 
+}
+
+const Car:car={               //aliases apply to all type of variables
+name:"abhishek",
+year:2020
+}
+
+interface rect{
+    height:number
+    width:number
+}
+
+const Rectangle:rect={
+    height:10,                 //Interfaces only apply to objects
+    width:20
+}
+
 
 
