@@ -30,8 +30,7 @@ enum temp{
     south,
     east ,
     west
-}
-                              // enums
+}                // enums auto increment initial = 0 
 console.log(temp.north); 
 temp.north="south"; // readonly property
 
@@ -58,6 +57,21 @@ const Rectangle:rect={
     height:10,                 // Interfaces only apply to objects
     width:20
 }
+
+const Htatus:number | string ="hello"  // Union when  a variable can be of 2 types 
+
+console.log(Htatus.toUpperCase());   // error if htatus is a number 
+
+function hello(x:number,y:string):number{
+                                                // function
+    return 10;
+}
+
+hello(10,"abhishek");
+
+
+
+
 
 
 
