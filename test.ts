@@ -24,7 +24,7 @@ let obj1:{type:number,name?:string}={type:1};
 
 obj1.name="abhishek"
 
-
+//
 enum temp{
     north,
     south,
@@ -68,6 +68,11 @@ function hello(x:number,y:string):number{
 }
 
 hello(10,"abhishek");
+
+var numb:any=1;
+console.log((numb as string).length)
+
+console.log(<string> numb.length)                   //ts casting (override the property of variables)
 
 
 
