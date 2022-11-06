@@ -26,8 +26,8 @@ obj1.name="abhishek"
 
 //
 enum temp{
-    north,
-    south,
+    north, //
+    south, 
     east ,
     west
 }                // enums auto increment initial = 0 
