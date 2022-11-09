@@ -32,7 +32,7 @@ enum temp {
     west
 }                // enums auto increment initial = 0 
 console.log(temp.north);
-temp.north = "south"; // readonly property
+//temp.north = "south"; // readonly property
 
 
 type carYear = number;
@@ -94,5 +94,45 @@ console.log(myname.name)
 // private : only allows access to class members from within the class
 // protected : allows access to the class member from itself and any classes that inherit it, which is covered in the inheritance section below
 
+
+
+class Human 
+{
+    private name:string;
+    public constructor(name:string){
+        this.name=name;
+    }
+    private getName():string{
+        return this.name;
+    }
+}
+
+var firstHuman=new Human("abhishek");
+// firstHuman.getName();  //Property 'getName' is private and only accessible within class 'Human'.ts(2341)
+
+
+interface shape{
+   getArea:()=>number
+}//
+
+class Retangle implements shape{
+    public constructor(protected width: number, protected  height: number) {}
+    
+
+getArea():number {
+    return this.height*this.width;
+}
+}
+interface Shape {
+    getArea: () => number;
+  }
+  
+  class Rectngle implements Shape {
+    public constructor(protected readonly width: number, protected readonly height: number) {}
+  
+    public getArea(): number {
+      return this.width * this.height;
+    }
+  }
 
 
